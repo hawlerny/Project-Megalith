@@ -4,16 +4,16 @@ gsap.registerPlugin(ScrollTrigger);
 const carousel = document.querySelector(".carousel");
 
 // total width (number of items)
-const totalWidth = carousel.scrollWidth - window.innerWidth;
+const TotalWidth = carousel.scrollWidth - window.innerWidth;
 
 // animation
 gsap.to(carousel, {
-  x: -totalWidth,
+  x: -TotalWidth,
   ease: "none",
   scrollTrigger: {
     trigger: ".carousel-section",
     start: "top top",
-    end: () => "+=" + totalWidth,
+    end: () => "+=" + TotalWidth,
     scrub: true,
     pin: true,
     anticipatePin: 1
