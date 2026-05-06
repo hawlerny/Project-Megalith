@@ -3,6 +3,24 @@ A project with no real goal for now, the only thing in mind here is creating a s
 
 
 
+
+
+
+
+
+image to add
+to do to add
+
+
+
+
+
+
+
+
+
+
+
 Copyright (©) 2026 Occulta
 All rights reserved.
 
