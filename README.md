@@ -6,12 +6,9 @@ A project with no real goal for now, the only thing in mind here is creating a s
 
 
 
-
-
-image to add
 to do to add
 
-
+![picasso tier preview](Preview-image.png)
 
 
 
