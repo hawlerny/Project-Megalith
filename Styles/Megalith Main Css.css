@@ -6,23 +6,54 @@
 
 
 
+
 * {
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 250px;
-    background: #030303 ;
+    background: #070707;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle at 0 0,
+            rgba(0,255,100,0.18) 1px,
+            transparent 2px
+        ),
+
+        linear-gradient(
+            rgba(0,255,100,0.015) 2px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(0,255,100,0.015) 2px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
 }
 
 .Boites-Infos {
     position: fixed;
     width: 500px;
-    bottom: 20vh;
+    bottom: 12vh;
 }
 
 .Boites-Infos form {
@@ -38,7 +69,7 @@ body {
 .Entrées input { 
     width: 100%;
     height: 60px;             
-    background: transparent;
+    background: #111111;
     border: 2px solid #474747;
     outline: none;
     border-radius: 40px;
@@ -72,7 +103,7 @@ body {
 #Bouton-Connexion {
     width: 25%;
     height: 25px;
-    background: #004c0ae8;
+    background: #005b0ce8;
     border: none;
     outline: none;
     border-radius: 10px;
